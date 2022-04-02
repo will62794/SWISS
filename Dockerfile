@@ -61,6 +61,7 @@ COPY README.md /home/root/swiss/README.md
 COPY benchmarks /home/root/swiss/benchmarks
 COPY run-simple.sh /home/root/swiss/run-simple.sh
 COPY run.sh /home/root/swiss/run.sh
+COPY run_ivybench.sh /home/root/swiss/run_ivybench.sh
 COPY save.sh /home/root/swiss/save.sh
 COPY scripts /home/root/swiss/scripts
 COPY src /home/root/swiss/src
