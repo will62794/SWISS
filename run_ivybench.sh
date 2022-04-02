@@ -8,7 +8,7 @@
 ./run.sh benchmarks/tla-simpleregular.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/sharded_kv.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/lockserv.pyv --config auto --threads 1 --minimal-models --with-conjs
-./run.sh benchmarks/TwoPhase.pyv --config auto --threads 1 --minimal-models --with-conjs
+./run.sh benchmarks/tla-twophase.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/learning_switch.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/simple-decentralized-lock.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/two_phase_commit.pyv --config auto --threads 1 --minimal-models --with-conjs
@@ -17,7 +17,7 @@
 ./run.sh benchmarks/pyv-learning-switch.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/chord.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/sharded_kv_no_lost_keys.pyv --config auto --threads 1 --minimal-models --with-conjs
-./run.sh benchmarks/naive_consensus.pyv --config auto --threads 1 --minimal-models --with-conjs
+./run.sh benchmarks/naive_consensus.ivy --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/client_server_ae.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/simple-election.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/toy_consensus_epr.pyv --config auto --threads 1 --minimal-models --with-conjs
