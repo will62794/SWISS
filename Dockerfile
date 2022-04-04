@@ -5,6 +5,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 
+RUN apt-get install -y curl
+RUN apt-get install -y git
+
 RUN apt-get install -y vim
 RUN apt-get install -y clang
 RUN apt-get install -y python3-pip
