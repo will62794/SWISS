@@ -1,4 +1,5 @@
 import subprocess,sys
+import time
 
 bms = [
     "tla-consensus.pyv",
@@ -37,8 +38,11 @@ for ind,bm in enumerate(bms_to_run):
     msg = f"=== Running benchmark {ind+1}/{len(bms_to_run)}: '{bm}'"
     print(msg)
     sys.stdout.flush()
+    # logdir = "ivybench" + bm.split(".")[0]
+    # --logdir
     cmd = f"./run.sh benchmarks/{bm} --config auto --threads 1 --minimal-models --with-conjs"
     ret = subprocess.run(cmd, shell=True)
     print(ret.stdout)
+    time.sleep(2)
     # print(ret.stderr)
     # retlines = ret.stdout.splitlines()
