@@ -32,6 +32,7 @@
 
 ./run.sh benchmarks/tla-consensus.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/tla-tcommit.pyv --config auto --threads 1 --minimal-models --with-conjs
+./run.sh benchmarks/lock_server.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/ex-quorum-leader-election.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/toy_consensus_forall.pyv --config auto --threads 1 --minimal-models --with-conjs
 ./run.sh benchmarks/tla-simple.pyv --config auto --threads 1 --minimal-models --with-conjs
