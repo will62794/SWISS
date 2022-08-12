@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #
 # Run all FMCAD 2022 benchmarks with SWISS.
 #
