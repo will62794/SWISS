@@ -2,7 +2,7 @@
 # Run all FMCAD 2022 benchmarks with SWISS.
 #
 
-bmdir="fmcad22-benchmarks"
+bmdir="benchmarks/fmcad22"
 
 # Run with 'auto' config.
 ./run.sh $bmdir/ex-lockserv_automaton.pyv --config auto --threads 1 --minimal-models --with-conjs
