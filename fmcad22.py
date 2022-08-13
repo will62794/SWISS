@@ -41,8 +41,12 @@ def run_bm(bm, config):
     bms_dir = "benchmarks/fmcad22"
     logdir = f"logs/{config}/" + bm.split(".")[0]
     os.makedirs(logdir, exist_ok=True)
+
+    #
+    # TODO: Specify seed here, with --seed
+    #
     swiss_cmd = f"./run.sh {bms_dir}/{bm} --config auto --threads 1 --minimal-models --with-conjs --logdir {logdir}"
-    timeout_prefix = "timeout 10m "
+    # timeout_prefix = "timeout 10m "
     # cmd = timeout_prefix + swiss_cmd
     cmd = swiss_cmd
     print(cmd)
