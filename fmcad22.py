@@ -43,9 +43,14 @@ def run_bm(bm, config):
     os.makedirs(logdir, exist_ok=True)
     swiss_cmd = f"./run.sh {bms_dir}/{bm} --config auto --threads 1 --minimal-models --with-conjs --logdir {logdir}"
     timeout_prefix = "timeout 10m "
-    cmd = timeout_prefix + swiss_cmd
+    # cmd = timeout_prefix + swiss_cmd
+    cmd = swiss_cmd
     print(cmd)
-    ret = subprocess.run(cmd, shell=True)
+    timeout_secs = 120
+    try:
+        ret = subprocess.run(cmd, shell=True, timeout=timeout_secs)
+    except subprocess.TimeoutExpired:
+        print(f"Terminated due to timeout expiring ({timeout_secs}s)")
 
     # print(ret.stdout)
     # print(ret.stderr)
