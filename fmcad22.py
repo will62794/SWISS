@@ -46,7 +46,8 @@ def run_bm(bm, config):
     # cmd = timeout_prefix + swiss_cmd
     cmd = swiss_cmd
     print(cmd)
-    timeout_secs = 120
+    one_minute = 60
+    timeout_secs = 10 * one_minute
     try:
         ret = subprocess.run(cmd, shell=True, timeout=timeout_secs)
     except subprocess.TimeoutExpired:
