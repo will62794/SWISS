@@ -57,7 +57,7 @@ def run_bm(bm, config):
 
 bms_to_run = bms
 for ind,bm in enumerate(bms_to_run):
-    msg = f"=== Running benchmark {ind+1}/{len(bms_to_run)}: '{bm}'"
+    msg = f"### Running benchmark {ind+1}/{len(bms_to_run)}: '{bm}'"
     print(msg)
     sys.stdout.flush()
 
