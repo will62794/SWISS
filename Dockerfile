@@ -64,7 +64,6 @@ COPY LICENSE /home/root/swiss/LICENSE
 COPY README.md /home/root/swiss/README.md
 COPY benchmarks /home/root/swiss/benchmarks
 COPY run-simple.sh /home/root/swiss/run-simple.sh
-COPY fmcad22.sh /home/root/swiss/fmcad22.sh
 COPY fmcad22.py /home/root/swiss/fmcad22.py
 COPY run.sh /home/root/swiss/run.sh
 COPY save.sh /home/root/swiss/save.sh
